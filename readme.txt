@@ -13,7 +13,7 @@ David's Bootstrap theme made with love for IEEE <3
 * Made the footer icon better
 * Added social media options to settings
 
-= 1.1 - July 5, 2020 =
+= 1.2 - July 5, 2020 =
 * Added donator control to WP Customizer to allow for easier control
 * Squashed bugs
 * Added donators to the front page
