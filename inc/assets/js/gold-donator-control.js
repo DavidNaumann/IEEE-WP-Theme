@@ -18,8 +18,6 @@
             gold_donators_info = [];
         }
 
-        $('#gold-donator-control-items').append("<p>Don't forget to fill out the meta for the image sources (Title goes to name, description goes to description, Alt goes to alt) </p>");
-
         for(var i = 0; i < gold_donators_info.length; i++){
             $('#gold-donator-control-items').append("<div class='gold-donator-collection' id='gold-donator-id-"+ i.toString() +"'> </div>");
             if(gold_donators_info[i] != ""){
@@ -49,7 +47,7 @@
                     $("#gold-donator-id-" + i.toString()).append( "<img id='gold-donator-image' src='"+attachment.url+"'>" );
 
                     $("#gold-donator-id-" + i.toString()).append( "<a id='delete-gold-donator-btn' class='button-secondary'>Delete Sponsor</a>" );
-                    gold_donators_info.push({'donator_name': attachment.title, 'donator_desc':attachment.description, 'donator_image': attachment.url});
+                    gold_donators_info.push({'donator_name': attachment.title, 'donator_alt':attachment.alt, 'donator_image': attachment.url});
                     //
                 });
 
@@ -60,9 +58,11 @@
         });
 
         $(document).on('click', '#delete-gold-donator-btn', function () {
-            var gold_donator_image = $('img', this.parent).attr('src');
-            gold_donators_info = gold_donators_info.filter(function (gold_donators, index, arr) {
-                return gold_donators.donator_image != gold_donator_image;
+            let gold_donator_image = $(this).parent('.gold-donator-collection').find('img').attr('src');
+            console.log(gold_donator_image);
+            console.log($('img', this.parent));
+            gold_donators_info = gold_donators_info.filter(function (gold_donator, index, arr) {
+                return gold_donator.donator_image != gold_donator_image;
             });
             $(event.target).closest(".gold-donator-collection").remove();
             var gold_donators_string = JSON.stringify(gold_donators_info);

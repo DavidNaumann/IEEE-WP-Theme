@@ -18,8 +18,6 @@
             silver_donators_info = [];
         }
 
-        $('#silver-donator-control-items').append("<p>Don't forget to fill out the meta for the image sources (Title goes to name, description goes to description, Alt goes to alt) </p>");
-
         for(var i = 0; i < silver_donators_info.length; i++){
             $('#silver-donator-control-items').append("<div class='silver-donator-collection' id='silver-donator-id-"+ i.toString() +"'> </div>");
             if(silver_donators_info[i] != ""){
@@ -49,7 +47,7 @@
                     $("#silver-donator-id-" + i.toString()).append( "<img id='silver-donator-image' src='"+attachment.url+"'>" );
 
                     $("#silver-donator-id-" + i.toString()).append( "<a id='delete-silver-donator-btn' class='button-secondary'>Delete Sponsor</a>" );
-                    silver_donators_info.push({'donator_name': attachment.title, 'donator_desc':attachment.description, 'donator_image': attachment.url});
+                    silver_donators_info.push({'donator_name': attachment.title, 'donator_alt':attachment.alt, 'donator_image': attachment.url});
                     //
                 });
 
@@ -60,9 +58,11 @@
         });
 
         $(document).on('click', '#delete-silver-donator-btn', function () {
-            var silver_donator_image = $('img', this.parent).attr('src');
-            silver_donators_info = silver_donators_info.filter(function (silver_donators, index, arr) {
-                return silver_donators.donator_image != silver_donator_image;
+            let silver_donator_image = $(this).parent('.silver-donator-collection').find('img').attr('src');
+            console.log(silver_donator_image);
+            console.log($('img', this.parent));
+            silver_donators_info = silver_donators_info.filter(function (silver_donator, index, arr) {
+                return silver_donator.donator_image != silver_donator_image;
             });
             $(event.target).closest(".silver-donator-collection").remove();
             var silver_donators_string = JSON.stringify(silver_donators_info);

@@ -8921,33 +8921,24 @@ body {
 }
 
 /* Donator Styles */
-
-.donator-box {
-    margin: auto;
-}
-
 .donator {
-    text-align: center;
+    text-align: left;
 }
 
 .donator-card {
-    width: 18rem;
-}
-
-.donator-image {
-    /* May need this */
+    width: 20vw;
 }
 
 .diamond {
-    color: #12d0ff;
+    color: #0a94b8;
 }
 
 .gold {
-    color: gold;
+    color: #bfa302;
 }
 
 .silver {
-    color: #9e9e9e;
+    color: #505050;
 }
 
 /* End Donator Styles */

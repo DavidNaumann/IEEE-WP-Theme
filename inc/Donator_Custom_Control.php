@@ -20,7 +20,7 @@ class Diamond_Donator_Custom_Control extends WP_Customize_Control
             </div>
         </div>
 
-        <input class="wp-editor-area" id="diamond-donators-input" <?php $this->link(); ?>>
+        <input class="wp-editor-area" type="hidden" id="diamond-donators-input" <?php $this->link(); ?>>
     <?php
     }
 }
@@ -40,7 +40,7 @@ class Gold_Donator_Custom_Control extends WP_Customize_Control
             </div>
         </div>
 
-        <input class="wp-editor-area" id="gold-donators-input" <?php $this->link(); ?>>
+        <input class="wp-editor-area" type="hidden" id="gold-donators-input" <?php $this->link(); ?>>
         <?php
     }
 }
@@ -60,7 +60,7 @@ class Silver_Donator_Custom_Control extends WP_Customize_Control
             </div>
         </div>
 
-        <input class="wp-editor-area" id="silver-donators-input" <?php $this->link(); ?>>
+        <input class="wp-editor-area" type="hidden" id="silver-donators-input" <?php $this->link(); ?>>
         <?php
     }
 }
