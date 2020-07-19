@@ -25,3 +25,6 @@ David's Bootstrap theme made with love for IEEE <3
 * Reformatted donator cards to be more visible for all to see
 * Completely removed sidebar as it is a distractor on main pages (may consider adding it for posts page in the future)
 * Redid how the logic of adding donators worked so it won't have any more edge cases
+
+= 1.2.3 July 19, 2020
+* Fixed theming issues with the default installation so now it always uses bootstrap with a side of our IEEE theme

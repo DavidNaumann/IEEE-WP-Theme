@@ -173,42 +173,9 @@ function davids_bootstrap_starter_scripts() {
 	// load AItheme styles
 	// load Davids Bootstrap Starter styles
 	wp_enqueue_style( 'davids-bootstrap-style', get_stylesheet_uri() );
-    if(get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default') {
-        wp_enqueue_style( 'davids-bootstrap-'.get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/'.get_theme_mod( 'theme_option_setting' ).'.css', false, '' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'poppins-lora') {
-        wp_enqueue_style( 'davids-bootstrap-poppins-lora-font', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'montserrat-merriweather') {
-        wp_enqueue_style( 'davids-bootstrap-montserrat-merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900|Montserrat:300,400,400i,500,700,800' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'poppins-poppins') {
-        wp_enqueue_style( 'davids-bootstrap-poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'roboto-roboto') {
-        wp_enqueue_style( 'davids-bootstrap-roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'arbutusslab-opensans') {
-        wp_enqueue_style( 'davids-bootstrap-arbutusslab-opensans-font', 'https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,300i,400,400i,600,600i,700,800' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'oswald-muli') {
-        wp_enqueue_style( 'davids-bootstrap-oswald-muli-font', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Oswald:300,400,500,600,700' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'montserrat-opensans') {
-        wp_enqueue_style( 'davids-bootstrap-montserrat-opensans-font', 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,800' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'robotoslab-roboto') {
-        wp_enqueue_style( 'davids-bootstrap-robotoslab-roboto', 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,300i,400,400i,500,700,700i' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) && get_theme_mod( 'preset_style_setting' ) !== 'default') {
-        wp_enqueue_style( 'davids-bootstrap-'.get_theme_mod( 'preset_style_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/typography/'.get_theme_mod( 'preset_style_setting' ).'.css', false, '' );
-    }
-    //Color Scheme
-    /*if(get_theme_mod( 'preset_color_scheme_setting' ) && get_theme_mod( 'preset_color_scheme_setting' ) !== 'default') {
-        wp_enqueue_style( 'davids-bootstrap-'.get_theme_mod( 'preset_color_scheme_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/color-scheme/'.get_theme_mod( 'preset_color_scheme_setting' ).'.css', false, '' );
-    }else {
-        wp_enqueue_style( 'davids-bootstrap-default', get_template_directory_uri() . '/inc/assets/css/presets/color-scheme/blue.css', false, '' );
-    }*/
+	wp_enqueue_style( 'davids-bootstrap-'.get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/ieee.css', false, '' );
+	wp_enqueue_style( 'davids-bootstrap-montserrat-opensans-font', 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,800' );
+
 
 	wp_enqueue_script('jquery');
 

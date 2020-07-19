@@ -30,7 +30,7 @@
 			endwhile; // End of the loop.
 			?>
 
-            <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )):
+            <?php if(is_front_page()):
                     $diamond_donators_json = stripslashes(get_theme_mod('diamond_donators_info'));
                     $diamond_donators_info = json_decode($diamond_donators_json, true);
                     $gold_donators_json = stripslashes(get_theme_mod('gold_donators_info'));

@@ -81,60 +81,6 @@ function donators_customize_register( $wp_customize ) {
 }
 
 function davids_bootstrap_starter_customize_register( $wp_customize ) {
-
-    //Style Preset
-    $wp_customize->add_section(
-        'typography',
-        array(
-            'title' => __( 'Preset Styles', 'davids-bootstrap' ),
-            //'description' => __( 'This is a section for the typography', 'davids-bootstrap' ),
-            'priority' => 20,
-        )
-    );
-
-    //Theme Option
-    $wp_customize->add_setting( 'theme_option_setting', array(
-        'default'   => 'default',
-        'type'       => 'theme_mod',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'wp_filter_nohtml_kses',
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'theme_option_setting', array(
-        'label' => __( 'Theme Option', 'davids-bootstrap' ),
-        'section'    => 'typography',
-        'settings'   => 'theme_option_setting',
-        'type'    => 'select',
-        'choices' => array(
-            'default' => 'Default',
-            'ieee' => 'IEEE',
-        )
-    ) ) );
-
-    $wp_customize->add_setting( 'preset_style_setting', array(
-        'default'   => 'default',
-        'type'       => 'theme_mod',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'wp_filter_nohtml_kses',
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_style_setting', array(
-        'label' => __( 'Typography', 'davids-bootstrap' ),
-        'section'    => 'typography',
-        'settings'   => 'preset_style_setting',
-        'type'    => 'select',
-        'choices' => array(
-            'default' => 'Default',
-            'arbutusslab-opensans' => 'Arbutus Slab / Opensans',
-            'montserrat-merriweather' => 'Montserrat / Merriweather',
-            'montserrat-opensans' => 'Montserrat / Opensans',
-            'oswald-muli' => 'Oswald / Muli',
-            'poppins-lora' => 'Poppins / Lora',
-            'poppins-poppins' => 'Poppins / Poppins',
-            'roboto-roboto' => 'Roboto / Roboto',
-            'robotoslab-roboto' => 'Roboto Slab / Roboto',
-        )
-    ) ) );
-
-
     /*Banner*/
     $wp_customize->add_section(
         'header_image',
