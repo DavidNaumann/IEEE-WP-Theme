@@ -31,7 +31,6 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 # Media
 	## Captions
 	## Galleries
-# Woocommerce
 # Footer
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -313,24 +312,13 @@ header#masthead {
   background-size: cover !important;
 }
 
-body:not(.theme-preset-active) #page-sub-header h1 {
-  line-height: 1.6;
-  font-size: 4rem;
-  color: #563e7c;
-  margin: 0 0 1rem;
-  border: 0;
-  padding: 0;
-}
-
 #page-sub-header p {
   margin-bottom: 0;
   line-height: 1.4;
   font-size: 1.25rem;
   font-weight: 300;
 }
-body:not(.theme-preset-active) #page-sub-header p {
-color: #212529;
-}
+
 a.page-scroller {
   color: #333;
   font-size: 2.6rem;
@@ -338,14 +326,6 @@ a.page-scroller {
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  body:not(.theme-preset-active) #page-sub-header h1 {
-    font-size: 3.750rem;
-  }
-  body:not(.theme-preset-active) #page-sub-header {
-    font-size: 1.25rem;
-  }
-}
 @media screen and (min-width: 992px) {
   #page-sub-header p {
     max-width: 43rem;
@@ -361,20 +341,6 @@ a.page-scroller {
 #masthead nav {
   padding-left: 0;
   padding-right: 0;
-}
-
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-  color: #cdbfe3;
-  padding: 0.5rem;
-  font-weight: 500;
-  font-size: 0.875rem;
-}
-
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
-body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
-  color: #fff;
-  font-weight: 600;
-  /*background: #f9f9f9;*/
 }
 
 .navbar-brand {
@@ -903,25 +869,6 @@ object {
 }
 
 /*--------------------------------------------------------------
-# Plugin Compatibility
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Woocommerce
---------------------------------------------------------------*/
-.woocommerce-cart-form .shop_table .coupon .input-text {
-  width: 8.313rem !important;
-}
-
-.variations_form .variations .value > select {
-  margin-bottom: 0.625rem;
-}
-
-.woocommerce-MyAccount-content .col-1,
-.woocommerce-MyAccount-content .col-2 {
-  max-width: 100%;
-}
-
-/*--------------------------------------------------------------
 ## Elementor
 --------------------------------------------------------------*/
 .elementor-page article .entry-footer {
@@ -958,10 +905,6 @@ object {
 --------------------------------------------------------------*/
 footer#colophon {
   font-size: 85%;
-}
-body:not(.theme-preset-active) footer#colophon {
-  color: #99979c;
-  background-color: #f7f7f7;
 }
 .navbar-dark .site-info {
   color: #fff;

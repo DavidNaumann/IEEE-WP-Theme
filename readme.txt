@@ -28,3 +28,6 @@ David's Bootstrap theme made with love for IEEE <3
 
 = 1.2.3 July 19, 2020
 * Fixed theming issues with the default installation so now it always uses bootstrap with a side of our IEEE theme
+
+= 1.2.3.1 July 19, 2020
+* Forgot change style.css to reflect the changes from the last commit 👀
