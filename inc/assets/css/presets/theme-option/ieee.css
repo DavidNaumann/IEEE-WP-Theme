@@ -3214,7 +3214,7 @@ tbody.collapse.show {
     color: #373a3c;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #002855;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
@@ -3317,7 +3317,7 @@ tbody.collapse.show {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: rgba(255, 255, 255, 0.5);
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3325,9 +3325,9 @@ tbody.collapse.show {
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+    color: #ffffff;
     text-decoration: none;
-    background-color: #f8f9fa !important;
+    background-color: #002855 !important;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -8926,7 +8926,7 @@ body {
 }
 
 .donator-card {
-    width: 20vw;
+    width: 18rem;
 }
 
 .diamond {
@@ -8942,3 +8942,17 @@ body {
 }
 
 /* End Donator Styles */
+
+
+/* Footer Styles */
+#sticky-footer {
+    flex-shrink: none;
+}
+
+/* Footer also utilizes navbar-brand for copyright logo */
+
+.footer-bg {
+    background-color: #002855 !important;
+}
+
+/* End Footer Styles */

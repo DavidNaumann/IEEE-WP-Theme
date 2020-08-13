@@ -31,7 +31,6 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 # Media
 	## Captions
 	## Galleries
-# Footer
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -242,7 +241,7 @@ p {
   margin-bottom: 1.5em;
 }
 h1.entry-title {
-  font-size: 1.31rem;
+  font-size: 2.34375rem;
   border-bottom: 1px solid #eaecef;
 }
 h2.entry-title {
@@ -900,27 +899,7 @@ object {
   margin-top: 0;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-footer#colophon {
-  font-size: 85%;
-}
-.navbar-dark .site-info {
-  color: #fff;
-}
-.copyright {
-  font-size: 0.875rem;
-  margin-bottom: 0;
-  text-align: center;
-}
 
-@media screen and (max-width: 767px) {
-  #masthead .navbar-nav > li > a {
-    padding-bottom: 0.938rem;
-    padding-top: 0.938rem;
-  }
-}
 /*--------------------------------------------------------------
 # Media Query
 --------------------------------------------------------------*/
@@ -937,6 +916,7 @@ footer#colophon {
   .navbar-dark .dropdown-item {
     color: #fff;
   }
+
   .navbar-nav .dropdown-menu {
     background: transparent;
     box-shadow: none;

@@ -46,44 +46,42 @@
             ?>
 
             <div id="page-sub-header">
-                    <?php if (($diamond_donators_count + $gold_donators_count + $silver_donators_count) > 0) { ?>
-                        <h2 class="donator">Sponsors</h2>
-                            <div class="row">
-                                <div class="card-deck">
-                                    <?php foreach ($diamond_donators_info as $diamond_donator) { ?>
-                                    <div class="card donator-card">
-                                        <div class="embed-responsive embed-responsive-1by1">
-                                            <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_donator['donator_image'] ?>" alt="<?php echo $diamond_donator['donator_alt'] ?>">
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="diamond">Diamond</p>
-                                        </div>
-                                    </div>
-                                    <?php } ?>
-                                    <?php foreach ($gold_donators_info as $gold_donator) { ?>
-                                        <div class="card donator-card">
-                                            <div class="embed-responsive embed-responsive-1by1">
-                                                <img class="card-img-top embed-responsive-item" src="<?php echo $gold_donator['donator_image'] ?>" alt="<?php echo $gold_donator['donator_alt'] ?>">
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="gold">Gold</p>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
-                                    <?php foreach ($silver_donators_info as $silver_donator) { ?>
-                                        <div class="card donator-card">
-                                            <div class="embed-responsive embed-responsive-1by1">
-                                                <img class="card-img-top embed-responsive-item" src="<?php echo $silver_donator['donator_image'] ?>" alt="<?php echo $silver_donator['donator_alt'] ?>">
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="silver">Silver</p>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
-                                </div>
-                            </div>
-                        <?php } ?>
+            <?php if (($diamond_donators_count + $gold_donators_count + $silver_donators_count) > 0) { ?>
+                <h2 class="donator">Sponsors</h2>
+                <div class="card-deck">
+                    <?php foreach ($diamond_donators_info as $diamond_donator) { ?>
+                    <div class="card donator-card">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_donator['donator_image'] ?>" alt="<?php echo $diamond_donator['donator_alt'] ?>">
+                        </div>
+                        <div class="card-body">
+                            <p class="diamond">Diamond</p>
+                        </div>
                     </div>
+                    <?php } ?>
+                    <?php foreach ($gold_donators_info as $gold_donator) { ?>
+                    <div class="card donator-card">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="<?php echo $gold_donator['donator_image'] ?>" alt="<?php echo $gold_donator['donator_alt'] ?>">
+                        </div>
+                        <div class="card-body">
+                            <p class="gold">Gold</p>
+                        </div>
+                    </div>
+                    <?php } ?>
+                    <?php foreach ($silver_donators_info as $silver_donator) { ?>
+                    <div class="card donator-card">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="<?php echo $silver_donator['donator_image'] ?>" alt="<?php echo $silver_donator['donator_alt'] ?>">
+                        </div>
+                        <div class="card-body">
+                        <p class="silver">Silver</p>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+                <?php } ?>
+            </div>
             <?php endif; ?>
 
 
