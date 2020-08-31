@@ -590,7 +590,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1100px;
     }
 }
 
@@ -3977,7 +3977,8 @@ tbody.collapse.show {
     padding-top: 0.32421875rem;
     padding-bottom: 0.32421875rem;
     margin-right: 1rem;
-    font-size: 1.171875rem;
+    font-weight: 300;
+    font-size: 1.875rem;
     line-height: inherit;
     white-space: nowrap;
 }
@@ -4410,6 +4411,11 @@ tbody.collapse.show {
     color: rgba(0, 0, 0, 0.9);
 }
 
+#main-nav
+{
+    font-size: 1.05rem;
+}
+
 .navbar-dark .navbar-brand {
     color: #fff;
 }
@@ -4443,11 +4449,23 @@ tbody.collapse.show {
     color: #78be20;
 }
 
+.navbar-nav .social-link {
+    color: #78be20;
+}
+
 .navbar-dark .navbar-nav .social-link:hover, .navbar-dark .navbar-nav .social-link:focus {
     color: white;
 }
 
+.navbar-nav .social-link:hover, .navbar-nav .social-link:focus {
+    color: white;
+}
+
 .navbar-dark .navbar-nav .social-link.disabled {
+    color: #78be20;
+}
+
+.navbar-nav .social-link.disabled {
     color: #78be20;
 }
 
@@ -4456,6 +4474,13 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .active > .social-link,
 .navbar-dark .navbar-nav .social-link.show,
 .navbar-dark .navbar-nav .social-link.active {
+    color: #fff;
+}
+
+.navbar-nav .show > .social-link,
+.navbar-nav .active > .social-link,
+.navbar-nav .social-link.show,
+.navbar-nav .social-link.active {
     color: #fff;
 }
 
@@ -8926,7 +8951,8 @@ body {
 }
 
 .donator-card {
-    width: 18rem;
+    max-height: 16rem;
+    max-width: 18rem;
 }
 
 .diamond {
@@ -8944,6 +8970,27 @@ body {
 /* End Donator Styles */
 
 
+/* Content Area Styles */
+
+.content-area
+{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.main-container
+{
+    max-width: 1340px;
+}
+
+.widget-area
+{
+    padding: 1.5rem;
+    background-color: white;
+}
+
+
+
 /* Footer Styles */
 #sticky-footer {
     flex-shrink: none;
@@ -8953,6 +9000,34 @@ body {
 
 .footer-bg {
     background-color: #002855 !important;
+}
+
+/*--------------------------------------------------------------
+## Social portion of footer
+--------------------------------------------------------------*/
+.footer-social {
+    text-align: right;
+}
+
+
+/* social links colors */
+.navbar-nav .social-footer-link:hover, .navbar-nav .social-footer-link:focus {
+    color: white;
+}
+
+.navbar-nav .social-footer-link:hover, .navbar-nav .social-footer-link:focus {
+    color: white;
+}
+
+.navbar-nav .social-footer-link.disabled {
+    color: #78be20;
+}
+
+.navbar-nav .show > .social-footer-link,
+.navbar-nav .active > .social-footer-link,
+.navbar-nav .social-footer-link.show,
+.navbar-nav .social-footer-link.active {
+    color: #fff;
 }
 
 /* End Footer Styles */

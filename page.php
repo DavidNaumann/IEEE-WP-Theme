@@ -54,8 +54,8 @@
                         <div class="embed-responsive embed-responsive-1by1">
                             <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_donator['donator_image'] ?>" alt="<?php echo $diamond_donator['donator_alt'] ?>">
                         </div>
-                        <div class="card-body">
-                            <p class="diamond">Diamond</p>
+                        <div class="card-body d-flex flex-column">
+                            <p class="diamond mt-auto">Diamond</p>
                         </div>
                     </div>
                     <?php } ?>
@@ -64,8 +64,8 @@
                         <div class="embed-responsive embed-responsive-1by1">
                             <img class="card-img-top embed-responsive-item" src="<?php echo $gold_donator['donator_image'] ?>" alt="<?php echo $gold_donator['donator_alt'] ?>">
                         </div>
-                        <div class="card-body">
-                            <p class="gold">Gold</p>
+                        <div class="card-body d-flex flex-column">
+                            <p class="gold mt-auto">Gold</p>
                         </div>
                     </div>
                     <?php } ?>
@@ -74,8 +74,8 @@
                         <div class="embed-responsive embed-responsive-1by1">
                             <img class="card-img-top embed-responsive-item" src="<?php echo $silver_donator['donator_image'] ?>" alt="<?php echo $silver_donator['donator_alt'] ?>">
                         </div>
-                        <div class="card-body">
-                        <p class="silver">Silver</p>
+                        <div class="card-body d-flex flex-column">
+                        <p class="silver mt-auto">Silver</p>
                         </div>
                     </div>
                     <?php } ?>

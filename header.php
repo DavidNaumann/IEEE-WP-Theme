@@ -23,7 +23,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'davids-bootstrap' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-	<header id="masthead" class="site-header navbar-static-top <?php echo davids_bootstrap_starter_bg_class(); ?>" role="banner">
+	<header id="masthead" class="site-header sticky-top <?php echo davids_bootstrap_starter_bg_class(); ?>" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">

@@ -31,3 +31,10 @@ David's Bootstrap theme made with love for IEEE <3
 
 = 1.2.3.1 July 19, 2020
 * Forgot change style.css to reflect the changes from the last commit 👀
+
+= 1.2.4
+* Fixed social footer
+* Made donator cards to be more flexible for varying sizes of logos
+* Added outside border so now the main box floats
+* Added pronounced drop shadow off the navbar to give it more contrast from the background
+* Tweaked CSS to make the pages look better
