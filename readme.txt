@@ -36,5 +36,6 @@ David's Bootstrap theme made with love for IEEE <3
 * Fixed social footer
 * Made donator cards to be more flexible for varying sizes of logos
 * Added outside border so now the main box floats
+* Navbar now sticks to the top of the page
 * Added pronounced drop shadow off the navbar to give it more contrast from the background
 * Tweaked CSS to make the pages look better
