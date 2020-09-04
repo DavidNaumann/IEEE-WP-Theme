@@ -8946,25 +8946,37 @@ body {
 }
 
 /* Donator Styles */
-.donator {
-    text-align: left;
+.sponsor {
+    text-align: center;
 }
 
-.donator-card {
-    max-height: 16rem;
-    max-width: 18rem;
+.sponsor-card {
+    max-height: 12rem;
+    max-width: 14rem;
 }
 
 .diamond {
-    color: #0a94b8;
+    color: #ffffff;
+}
+
+.diamond-card {
+    background-color: #0a94b8;
+}
+
+.gold-card {
+    background-color: #bfa302;
+}
+
+.silver-card {
+    background-color: #797979;
 }
 
 .gold {
-    color: #bfa302;
+    color: #ffffff;
 }
 
 .silver {
-    color: #505050;
+    color: #ffffff;
 }
 
 /* End Donator Styles */
@@ -9007,6 +9019,10 @@ body {
 --------------------------------------------------------------*/
 .footer-social {
     text-align: right;
+}
+
+#social {
+    font-size: 1.5em !important;
 }
 
 

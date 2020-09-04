@@ -239,6 +239,7 @@ h5 {
 
 p {
   margin-bottom: 1.5em;
+  font-size: 1.25rem;
 }
 h1.entry-title {
   font-size: 2.34375rem;
@@ -488,6 +489,7 @@ a.page-scroller {
   text-align: right;
   width: 50%;
 }
+
 .comment-content.card-block {
   padding: 20px;
 }

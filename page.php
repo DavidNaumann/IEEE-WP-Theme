@@ -31,48 +31,61 @@
 			?>
 
             <?php if(is_front_page()):
-                    $diamond_donators_json = stripslashes(get_theme_mod('diamond_donators_info'));
-                    $diamond_donators_info = json_decode($diamond_donators_json, true);
-                    $gold_donators_json = stripslashes(get_theme_mod('gold_donators_info'));
-                    $gold_donators_info = json_decode($gold_donators_json, true);
-                    $silver_donators_json = stripslashes(get_theme_mod('silver_donators_info'));
-                    $silver_donators_info = json_decode($silver_donators_json, true);
+                    $diamond_sponsors_json = stripslashes(get_theme_mod('diamond_sponsors_info'));
+                    $diamond_sponsors_info = json_decode($diamond_sponsors_json, true);
+                    $gold_sponsors_json = stripslashes(get_theme_mod('gold_sponsors_info'));
+                    $gold_sponsors_info = json_decode($gold_sponsors_json, true);
+                    $silver_sponsors_json = stripslashes(get_theme_mod('silver_sponsors_info'));
+                    $silver_sponsors_info = json_decode($silver_sponsors_json, true);
+
+                    if(is_null($diamond_sponsors_info))
+                    {
+                        $diamond_sponsors_info = [];
+                    }
+                    if(is_null($gold_sponsors_info))
+                    {
+                        $gold_sponsors_info = [];
+                    }
+                    if(is_null($silver_sponsors_info))
+                    {
+                        $silver_sponsors_info = [];
+                    }
 
                     // Counts
-                    $diamond_donators_count = count($diamond_donators_info);
-                    $gold_donators_count = count($gold_donators_info);
-                    $silver_donators_count = count($silver_donators_info);
+                    $diamond_sponsors_count = count($diamond_sponsors_info);
+                    $gold_sponsors_count = count($gold_sponsors_info);
+                    $silver_sponsors_count = count($silver_sponsors_info);
 
             ?>
 
-            <div id="page-sub-header">
-            <?php if (($diamond_donators_count + $gold_donators_count + $silver_donators_count) > 0) { ?>
-                <h2 class="donator">Sponsors</h2>
-                <div class="card-deck">
-                    <?php foreach ($diamond_donators_info as $diamond_donator) { ?>
-                    <div class="card donator-card">
+            <div id="page-sub-header" style="text-align: center; margin: auto">
+            <?php if (($diamond_sponsors_count + $gold_sponsors_count + $silver_sponsors_count) > 0) { ?>
+                <h2 class="sponsor text-center">Sponsors</h2>
+                <div class="card-deck mx-auto">
+                    <?php foreach ($diamond_sponsors_info as $diamond_sponsor) { ?>
+                    <div class="card sponsor-card diamond-card mx-auto">
                         <div class="embed-responsive embed-responsive-1by1">
-                            <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_donator['donator_image'] ?>" alt="<?php echo $diamond_donator['donator_alt'] ?>">
+                            <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_sponsor['sponsor_image'] ?>" alt="<?php echo $diamond_sponsor['sponsor_alt'] ?>">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="diamond mt-auto">Diamond</p>
                         </div>
                     </div>
                     <?php } ?>
-                    <?php foreach ($gold_donators_info as $gold_donator) { ?>
-                    <div class="card donator-card">
+                    <?php foreach ($gold_sponsors_info as $gold_sponsor) { ?>
+                    <div class="card sponsor-card gold-card mx-auto">
                         <div class="embed-responsive embed-responsive-1by1">
-                            <img class="card-img-top embed-responsive-item" src="<?php echo $gold_donator['donator_image'] ?>" alt="<?php echo $gold_donator['donator_alt'] ?>">
+                            <img class="card-img-top embed-responsive-item" src="<?php echo $gold_sponsor['sponsor_image'] ?>" alt="<?php echo $gold_sponsor['sponsor_alt'] ?>">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="gold mt-auto">Gold</p>
                         </div>
                     </div>
                     <?php } ?>
-                    <?php foreach ($silver_donators_info as $silver_donator) { ?>
-                    <div class="card donator-card">
+                    <?php foreach ($silver_sponsors_info as $silver_sponsor) { ?>
+                    <div class="card sponsor-card silver-card mx-auto">
                         <div class="embed-responsive embed-responsive-1by1">
-                            <img class="card-img-top embed-responsive-item" src="<?php echo $silver_donator['donator_image'] ?>" alt="<?php echo $silver_donator['donator_alt'] ?>">
+                            <img class="card-img-top embed-responsive-item" src="<?php echo $silver_sponsor['sponsor_image'] ?>" alt="<?php echo $silver_sponsor['sponsor_alt'] ?>">
                         </div>
                         <div class="card-body d-flex flex-column">
                         <p class="silver mt-auto">Silver</p>

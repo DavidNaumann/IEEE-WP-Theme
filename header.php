@@ -57,35 +57,35 @@
                 <div id="social-nav" class="collapse navbar-collapse justify-content-end">
                     <ul id="social-menu" class="navbar-nav">
                         <?php if(get_theme_mod('discord_setting')) { ?>
-                            <li id="twitter-social" class="menu-item nav-item">
+                            <li id="social" class="menu-item nav-item">
                                 <a href="<?php echo get_theme_mod('discord_setting') ?>" class="social-link">
                                     <span class="fab fa-discord"></span>
                                 </a>
                             </li>
                         <?php } ?>
                         <?php if(get_theme_mod('facebook_setting')) { ?>
-                            <li id="twitter-social" class="menu-item nav-item social-links">
+                            <li id="social" class="menu-item nav-item social-links">
                                 <a href="<?php echo get_theme_mod('facebook_setting') ?>" class="social-link">
                                     <span class="fab fa-facebook"></span>
                                 </a>
                             </li>
                         <?php } ?>
                         <?php if(get_theme_mod('instagram_setting')) { ?>
-                            <li id="twitter-social" class="menu-item nav-item social-links">
+                            <li id="social" class="menu-item nav-item social-links">
                                 <a href="<?php echo get_theme_mod('instagram_setting') ?>" class="social-link">
                                     <span class="fab fa-instagram"></span>
                                 </a>
                             </li>
                         <?php } ?>
                         <?php if(get_theme_mod('linkedin_setting')) { ?>
-                            <li id="twitter-social" class="menu-item nav-item social-links">
+                            <li id="social" class="menu-item nav-item social-links">
                                 <a href="<?php echo get_theme_mod('linkedin_setting') ?>" class="social-link">
                                     <span class="fab fa-linkedin"></span>
                                 </a>
                             </li>
                         <?php } ?>
                         <?php if(get_theme_mod('twitter_setting')) { ?>
-                            <li id="twitter-social" class="menu-item nav-item social-links">
+                            <li id="social" class="menu-item nav-item social-links">
                                 <a href="<?php echo get_theme_mod('twitter_setting') ?>" class="social-link">
                                     <span class="fab fa-twitter"></span>
                                 </a>

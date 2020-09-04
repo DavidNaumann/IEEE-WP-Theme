@@ -11,70 +11,70 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 
-require_once('Donator_Custom_Control.php');
+require_once('Sponsor_Custom_Control.php');
 
 function themeslug_sanitize_checkbox( $checked ) {
     // Boolean check.
     return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
-function donators_customize_register( $wp_customize ) {
+function sponsors_customize_register( $wp_customize ) {
 
 // Create our panels
 
-    $wp_customize->add_panel( 'donators', array(
-        'title' => 'Donators',
+    $wp_customize->add_panel( 'sponsors', array(
+        'title' => 'Sponsors',
     ) );
 
 // Create our sections
 
-    $wp_customize->add_section( 'diamond_donators' , array(
-        'title' => 'Diamond Donators',
-        'panel' => 'donators',
+    $wp_customize->add_section( 'diamond_sponsors' , array(
+        'title' => 'Diamond Sponsors',
+        'panel' => 'sponsors',
     ) );
 
-    $wp_customize->add_section( 'gold_donators' , array(
-        'title' => 'Gold Donators',
-        'panel' => 'donators',
+    $wp_customize->add_section( 'gold_sponsors' , array(
+        'title' => 'Gold Sponsors',
+        'panel' => 'sponsors',
     ) );
 
-    $wp_customize->add_section( 'silver_donators' , array(
-        'title'             => 'Silver Donators',
-        'panel' => 'donators',
+    $wp_customize->add_section( 'silver_sponsors' , array(
+        'title'             => 'Silver Sponsors',
+        'panel' => 'sponsors',
     ) );
 
 // Create our settings
 
-    $wp_customize->add_setting( 'diamond_donators_info', array(
+    $wp_customize->add_setting( 'diamond_sponsors_info', array(
         'default' => __( '[]' ),
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
-    $wp_customize->add_control( new Diamond_Donator_Custom_Control( $wp_customize, 'diamond_donators_info', array(
+    $wp_customize->add_control( new Diamond_Donator_Custom_Control( $wp_customize, 'diamond_sponsors_info', array(
         'label'    => __( 'Diamond Donators Image', 'davids-bootstrap' ),
-        'section'  => 'diamond_donators',
-        'settings' => 'diamond_donators_info',
+        'section'  => 'diamond_sponsors',
+        'settings' => 'diamond_sponsors_info',
         'type' => 'text'
     ) ) );
 
-    $wp_customize->add_setting( 'gold_donators_info', array(
+    $wp_customize->add_setting( 'gold_sponsors_info', array(
         'default' => __( '[]' ),
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
-    $wp_customize->add_control( new Gold_Donator_Custom_Control( $wp_customize, 'gold_donators_info', array(
+    $wp_customize->add_control( new Gold_Donator_Custom_Control( $wp_customize, 'gold_sponsors_info', array(
         'label'    => __( 'Gold Donators', 'davids-bootstrap' ),
-        'section'  => 'gold_donators',
-        'settings' => 'gold_donators_info',
+        'section'  => 'gold_sponsors',
+        'settings' => 'gold_sponsors_info',
         'type' => 'text'
     ) ) );
 
-    $wp_customize->add_setting( 'silver_donators_info', array(
+    $wp_customize->add_setting( 'silver_sponsors_info', array(
         'default' => __( '[]' ),
         'sanitize_callback' => 'wp_filter_nohtml_kses',
     ) );
-    $wp_customize->add_control( new Silver_Donator_Custom_Control( $wp_customize, 'silver_donators_info', array(
+    $wp_customize->add_control( new Silver_Donator_Custom_Control( $wp_customize, 'silver_sponsors_info', array(
         'label'    => __( 'Silver Donators', 'davids-bootstrap' ),
-        'section'  => 'silver_donators',
-        'settings' => 'silver_donators_info',
+        'section'  => 'silver_sponsors',
+        'settings' => 'silver_sponsors_info',
         'type' => 'text'
     ) ) );
 
@@ -278,7 +278,7 @@ function davids_bootstrap_starter_customize_register( $wp_customize ) {
 
 }
 
-add_action('customize_register', 'donators_customize_register');
+add_action('customize_register', 'sponsors_customize_register');
 add_action( 'customize_register', 'davids_bootstrap_starter_customize_register' );
 
 add_action( 'wp_head', 'davids_bootstrap_starter_customizer_css');
