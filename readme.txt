@@ -47,3 +47,8 @@ David's Bootstrap theme made with love for IEEE <3
 * Made the sponsors module centered instead of left-aligned
 * Fixed logic issues in sponsors module to handle null response from json_decode
 * Made it prettier :)
+
+= 1.2.6
+* Fixed display issues when turning off display header and tagline
+* Fixed styling issues with cards
+* Added the actual Sponsor_Custom_Control.php so it should function properly now!

@@ -26,8 +26,10 @@
                                 <img src="<?php echo esc_url(get_theme_mod( 'davids_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                             </a>
                         <?php else : ?>
+                            <?php if (display_header_text()) { ?>
                             &copy; 2020 Copyright: <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?>
                                 <small><?php esc_url(bloginfo('description')); ?></small></a>
+                            <?php } ?>
                         <?php endif; ?>
                         </p>
                     </div>
