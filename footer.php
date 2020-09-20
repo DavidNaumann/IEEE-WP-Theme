@@ -27,7 +27,7 @@
                             </a>
                         <?php else : ?>
                             <?php if (display_header_text()) { ?>
-                            &copy; 2020 Copyright: <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?>
+                            &copy; 2020 Copyright: <a class="site-title" style="color: white;" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?>
                                 <small><?php esc_url(bloginfo('description')); ?></small></a>
                             <?php } ?>
                         <?php endif; ?>
