@@ -8950,13 +8950,19 @@ body {
     text-align: center;
 }
 
+
 .sponsor-card {
-    max-height: 12rem;
-    max-width: 14rem;
+    /* max-height: 12rem; */
+    max-width: 12rem;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.diamond {
-    color: #ffffff;
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .diamond-card {
@@ -8971,11 +8977,18 @@ body {
     background-color: #797979;
 }
 
+.diamond {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
 .gold {
+    font-size: 1rem;
     color: #ffffff;
 }
 
 .silver {
+    font-size: 1rem;
     color: #ffffff;
 }
 
@@ -9022,7 +9035,7 @@ body {
 }
 
 #social {
-    font-size: 1.5em !important;
+    font-size: 1.25em !important;
 }
 
 

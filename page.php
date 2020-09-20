@@ -61,34 +61,40 @@
             <div id="page-sub-header" style="text-align: center; margin: auto">
             <?php if (($diamond_sponsors_count + $gold_sponsors_count + $silver_sponsors_count) > 0) { ?>
                 <h2 class="sponsor text-center">Sponsors</h2>
-                <div class="card-deck mx-auto">
+                <div class="row justify-content-center align-items-center">
                     <?php foreach ($diamond_sponsors_info as $diamond_sponsor) { ?>
-                    <div class="card sponsor-card diamond-card mx-auto">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_sponsor['sponsor_image'] ?>" alt="<?php echo $diamond_sponsor['sponsor_alt'] ?>">
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p class="diamond mt-auto">Diamond</p>
+                    <div class="col-sm-2">
+                        <div class="card sponsor-card diamond-card">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img class="card-img-top embed-responsive-item" src="<?php echo $diamond_sponsor['sponsor_image'] ?>" alt="<?php echo $diamond_sponsor['sponsor_alt'] ?>">
+                            </div>
+                            <div class="card-body">
+                                <p class="diamond mt-auto">Diamond</p>
+                            </div>
                         </div>
                     </div>
                     <?php } ?>
                     <?php foreach ($gold_sponsors_info as $gold_sponsor) { ?>
-                    <div class="card sponsor-card gold-card mx-auto">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <img class="card-img-top embed-responsive-item" src="<?php echo $gold_sponsor['sponsor_image'] ?>" alt="<?php echo $gold_sponsor['sponsor_alt'] ?>">
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p class="gold mt-auto">Gold</p>
+                    <div class="col-sm-2">
+                        <div class="card sponsor-card gold-card">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img class="card-img-top embed-responsive-item" src="<?php echo $gold_sponsor['sponsor_image'] ?>" alt="<?php echo $gold_sponsor['sponsor_alt'] ?>">
+                            </div>
+                            <div class="card-body">
+                                <p class="gold mt-auto">Gold</p>
+                            </div>
                         </div>
                     </div>
                     <?php } ?>
                     <?php foreach ($silver_sponsors_info as $silver_sponsor) { ?>
-                    <div class="card sponsor-card silver-card mx-auto">
-                        <div class="embed-responsive embed-responsive-1by1">
-                            <img class="card-img-top embed-responsive-item" src="<?php echo $silver_sponsor['sponsor_image'] ?>" alt="<?php echo $silver_sponsor['sponsor_alt'] ?>">
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                        <p class="silver mt-auto">Silver</p>
+                    <div class="col-sm-2">
+                        <div class="card sponsor-card silver-card">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img class="card-img-top embed-responsive-item" src="<?php echo $silver_sponsor['sponsor_image'] ?>" alt="<?php echo $silver_sponsor['sponsor_alt'] ?>">
+                            </div>
+                            <div class="card-body">
+                            <p class="silver mt-auto">Silver</p>
+                            </div>
                         </div>
                     </div>
                     <?php } ?>
